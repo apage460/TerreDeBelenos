@@ -1,0 +1,37 @@
+This is the Controller Layer.
+
+Its role is to take the user input (mainly posted data here) and run the right logic with it.
+The controllers are responsible for the update of the Model's data. This update should always happen before the Views' data collection.
+Classes here will use the Service Layer to get things done. Under no circumstances do controllers affect the Model directly. When a controller needs to update a Model Object, it uses the instance of that object that's kept as an attribute of the corresponding Service Object.
+
+Examples
+--------
+*WRONG* :
+
+	$controller = new Controller( $ModelObject );
+
+...with...
+
+	Controller {
+		private CurrentModelObject;
+
+		public function __construct(&$inModelObject) { $this->CurrentModelObject = $inModelObject; }
+		public function ControlLogic() { $this->CurrentModelObject->SetSomething( $Value ); }
+	}
+
+
+
+*RIGHT* :
+
+	$services = new Services( $ModelObject );
+	$controller = new Controller( $services );
+
+...with...
+
+	Controller {
+		private CurrentModelServices;
+
+		public function __construct(&$inModelServices) { $this->CurrentModelServices = $inModelServices; }
+		public function ControlLogic() { $this->CurrentModelServices->SetSomething( $Value ); }
+		public function GetModelObject() { return $this->CurrentModelServices->GetModelObject(); }
+	}

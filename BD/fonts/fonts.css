@@ -1,0 +1,78 @@
+@font-face {
+
+    font-family: 'pieces_of_eightregular';
+
+    src: url('files/pieces_of_eight-webfont.eot');
+
+    src: url('files/pieces_of_eight-webfont.eot?#iefix') format('embedded-opentype'),
+
+         url('files/pieces_of_eight-webfont.woff2') format('woff2'),
+
+         url('files/pieces_of_eight-webfont.woff') format('woff'),
+
+         url('files/pieces_of_eight-webfont.ttf') format('truetype'),
+
+         url('files/pieces_of_eight-webfont.svg#pieces_of_eightregular') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+
+}
+
+
+@font-face {
+
+    font-family: 'bebas_neueregular';
+
+    src: url('files/bebasneue-webfont.eot');
+
+    src: url('files/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+
+         url('files/bebasneue-webfont.woff2') format('woff2'),
+
+         url('files/bebasneue-webfont.woff') format('woff'),
+
+         url('files/bebasneue-webfont.ttf') format('truetype'),
+
+         url('files/bebasneue-webfont.svg#bebas_neueregular') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+
+}
+
+
+@font-face {
+
+    font-family: 'October Crow';
+
+    src: url('files/October Crow.ttf') format('truetype');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+
+}
+
+
+@font-face {
+
+    font-family: 'The Macabre';
+
+    src: url('files/The Macabre.woff2') format('woff2'),
+
+         url('files/The Macabre.woff') format('woff'),
+
+         url('files/The Macabre.ttf') format('truetype'),
+
+    font-weight: normal;
+
+    font-style: normal;
+
+}
+

@@ -1,0 +1,69 @@
+﻿PHP Page deposit.
+
+Most interfaces will follow some simple rules:
+- M(S)VC architecture : It's basically MVC with a service layer to keep objects serializable. Else they don't fit in session variables.
+- One interface, one purpose : Avoid interfaces merging a lot of unrelated functionalities. If an interface manages user's information, it does just that...
+- Keep the views simple : Avoid fancy views that are intuitive only to half the people using the web site.
+
+
+In addition, most pages will follow this base structure:
+
+------------------
+
+Configuration includes.
+
+═════ INCLUDES ═════
+All the model, services, view and controller's include.
+
+
+═════ INITIALIZATION ═════
+Connection to the database is opened here.
+All the objects and variables needed by the page are defined here.
+Session starts here.
+
+
+═════ SESSION HANDLING ═════
+Session life is checked and refreshed if timeout did not happen.
+
+
+═════ CONTROL ═════
+Controllers' calls. Model is updated.
+
+
+═════ DATA COLLECTION ═════
+New data is collected from database.
+Updated model is pushed back into views.
+Session variables are updated.
+
+
+═════ REDIRECTION ═════
+Connection to the database is closed here.
+
+If there's a redirection, this is where it finally goes.
+
+
+═════ HEADER ═════
+require_once('includes/header.php');
+Messages to the user are printed here.
+
+
+═════ NAVIGATION ═════
+This is where the navigation options are.
+Uses <DIV id="navigation">.
+
+
+═════ NAVIGATION ═════
+This is where the messages (errors and information) are displayed.
+Uses <DIV id="message">.
+
+
+═════ MAIN ═════
+Main user interface for each page.
+Uses '<DIV id="main">'.
+
+
+═════ FOOTER ═════
+Footnote is defined here.
+require_once('includes/footer.php');
+
+------------------

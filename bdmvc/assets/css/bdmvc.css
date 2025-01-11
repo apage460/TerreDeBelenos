@@ -1,0 +1,82 @@
+.errors-container{
+	text-transform: uppercase;
+	color: red;
+}
+
+.toPop {
+	border-radius: 4px;
+	background-color: rgba(255,255,255,1);
+	padding : 1.5em 2em 2em;
+	max-height: 800px;
+	overflow-y: scroll;
+	display: none;
+}
+
+.toPop::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+.toPop::-webkit-scrollbar{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.toPop::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.44, rgb(122,153,217)),
+									   color-stop(0.72, rgb(73,125,189)),
+									   color-stop(0.86, rgb(28,58,148)));
+}
+
+.toggled{
+	display: none;
+}
+
+.smallClose{
+	border-radius: 50%;
+	margin: 0px 2px;
+	width : 5px;
+	height: 5px;
+}
+.smallClose:hover{
+	font-weight: bold;
+}
+
+#missiveContainer div.no-gutter{
+	margin-right: 0;
+	margin-left: 0;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+#repliesContainer{
+	margin-top: 2rem;
+}
+
+#searchPersoMissive .resultats{
+	display: none;
+}
+
+#approved ul.alphabet{
+	list-style: none;
+	display: inline-block;
+}
+#approved ul.alphabet li{
+	display: inline;
+	padding: 0 0.5rem
+}
+
+
+/*MISSIONS*/
+#participantsContainer table tr td{
+	padding: 0.5rem 0;
+}
+
+#missions textarea, #editMission textarea{
+	resize: vertical;
+}

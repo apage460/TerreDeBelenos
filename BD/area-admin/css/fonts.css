@@ -1,0 +1,53 @@
+
+
+
+@font-face {
+
+    font-family: 'pieces_of_eightregular';
+
+    src: url('fonts/pieces_of_eight-webfont.eot');
+
+    src: url('fonts/pieces_of_eight-webfont.eot?#iefix') format('embedded-opentype'),
+
+         url('fonts/pieces_of_eight-webfont.woff2') format('woff2'),
+
+         url('fonts/pieces_of_eight-webfont.woff') format('woff'),
+
+         url('fonts/pieces_of_eight-webfont.ttf') format('truetype'),
+
+         url('fonts/pieces_of_eight-webfont.svg#pieces_of_eightregular') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+
+}
+
+
+
+
+
+
+@font-face {
+
+    font-family: 'bebas_neueregular';
+
+    src: url('fonts/bebasneue-webfont.eot');
+
+    src: url('fonts/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+
+         url('fonts/bebasneue-webfont.woff2') format('woff2'),
+
+         url('fonts/bebasneue-webfont.woff') format('woff'),
+
+         url('fonts/bebasneue-webfont.ttf') format('truetype'),
+
+         url('fonts/bebasneue-webfont.svg#bebas_neueregular') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+
+}

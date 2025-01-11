@@ -1,0 +1,26 @@
+.modalContainer{
+	width: 800px;
+	height: 500px;
+	background-color: #fff;
+}
+
+.success{
+	background-color: rgba(92, 184, 92,0.5);
+}
+
+.maxTableHeight{
+	max-height: 300px;
+	overflow-y : scroll;
+}
+
+.row {
+	padding : 0px 10px;
+}
+
+.red {
+	color : #c9302c;
+}
+
+.green {
+	color : #5cb85c;
+}

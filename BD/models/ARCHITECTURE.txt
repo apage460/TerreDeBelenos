@@ -1,0 +1,9 @@
+This is the Model Layer.
+
+All classes here should be serializable and able to be kept in the user's session.
+There should not be any direct reference to data mappers or any SQL in these, as it will lead to the necessity of having a link to the PDO.
+The PDO is *not* serializable : keep away from it!
+
+What's the PDO?
+---------------
+It's the interface between PHP and your database. It defines a series of classes that implement easy communication and data recovery through SQL queries.

@@ -1,0 +1,4 @@
+This is the View Layer.
+
+It is used to implement every user interfaces there is in the application.
+It can contain display logic, but no business logic nor any kind of modification to the model.

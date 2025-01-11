@@ -1,0 +1,5 @@
+This is the Service Layer.
+
+It is used as intermediary between the model, the interface and the database.
+With this kind of project, it is primarily used to manage database queries and results.
+Complexity being low, the role of services between controllers and model objects is conventional more that practical.
